@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 60px;
+
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.menu-btn-container{
+    width: 15%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-btn-container > button{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+}
+.logo-container{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.logo-container > h3{
+    font-size: 18px;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+}
+.card-btn-container{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.closeBtn, .menuBtn, .cardBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+}
+/* -----------------------**---------------- */
+.close{
+    display: none;
+}
+.closeBtn.close{
+    display: none;
+}
+.menuBtn.close{
+    display: none;
+}
+
+.main.close{
+    display: none;
+}
+/* -----------------------**---------------- */
+
+.menu{
+    position: absolute;
+    width: 100%;
+    height: 93vh;
+    background-color: #EBEBEB;
+    /* top: 0;left: 0; */
+
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.search-container{
+    height: 20%;
+    width: 100%;
+
+}
+
+.form{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-text{
+    margin-bottom: 7px;
+    height: 50px;
+    width: 90%;
+    border: none;
+    padding-left: 1rem;
+}
+
+.submit-form{
+    height: 50px;
+    width: 90%;
+    border: none;
+    color: white;
+    background-color: black;
+}
+
+.navigation-container{
+    width: 100%;
+    height: 80%;
+}
+
+.menu-nav{
+    /* margin-top: 0.5rem; */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+hr{
+    width: 90%;
+    height: 3px;
+    background-color: black;
+    margin: 10px 0;
+}
+
+.nav-item{
+    margin: 10px 0;
+    list-style: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link > svg{
+    margin-left: 5px;
+}
+
+/* ----------------------------------- */
+
+
+.main{
+    width: 100%;
+    height: 100%;
+    /* background-color: yellowgreen; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+/* ----------------------------------- */
+
+.hero{
+    width: 100%;
+    height: 30%;
+    position: relative;
+    /* background-color: yellow; */
+    position: relative;
+}
+.hero-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: black;
+    z-index: 1;
+    opacity: 0.1;
+}
+
+/* ----------------------------------- */
+
+
+
+.products-section{
+    width: 100%;
+    height: 70%;
+    margin-top:  2rem;
+    /* background-color: yellow; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.products-section-title{
+    width: 100%;
+    height: 5%;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    word-spacing: 7px;
+    /* background-color: whitesmoke; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    
+}
+
+.products-container{
+    width: 100%;
+    height: 95%;
+    /* background-color: yellow; */
+
+    /* border-bottom: 1px solid black; */
+    
+    /* border-bottom: 1px black solid; */
+}
+.products-devider{
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.514);
+
+}
+.products-row{
+    width: 100%;
+    height: 60%;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* margin-bottom: 0rem; */
+    overflow-x: scroll;
+    
+}
+
+.products-row::-webkit-scrollbar{
+    height: 0;
+    width: 0;
+}
+
+.products{
+    height: 100%;
+    width: 45%;
+
+    /* background-color: yellow; */
+
+}
+
+.products-body{
+    height: 170px;
+    width: 100%;
+}
+
+.products-desc{
+    height: 50%;
+    width: 100%;
+
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.products-desc > .desc{
+    text-align: center;
+    width: 85%;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.products-desc > .price{
+    text-align: center;
+    width: 85%;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+/* ///////////-------------------------------- */
+
+.brand-section{
+    width: 100%;
+    height: 200vh;
+
+    /* background-color: yellow; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.brand{
+    width: 90%;
+    height: 20%;
+    
+
+    margin-top: 3rem;
+}
+
+.brand-link{
+    /* margin-bottom: 1rem; */
+    color: rgba(0, 0, 0, 0.548);
+    font-size: 15px;
+}
+
+/* ************************************ */
+.brooks-section{
+    width: 100%;
+    height: 80vh;
+
+    /* background-color: yellowgreen; */
+    /* margin: 2rem 0 3rem 0; */
+}
+
+.brooks-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brooks-img{
+    width: 80%;
+    height: 50%;
+    background-image: url('/ASSETS/n1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1rem;
+}
+
+.brooks-products{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.brooks-products-row{
+    width: 80%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    /* background-color: yellow; */
+    /* border-bottom: 2px rgba(0, 0, 0, 0.253) solid;
+    padding-bottom: 15px; */
+}
+
